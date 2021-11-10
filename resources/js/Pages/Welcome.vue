@@ -1,4 +1,4 @@
 <template>
-    <h1>Hello</h1>
-    <h1>Home Dad Bakery</h1>
+    <h1 class=" text-2xl text-red-400">Hello</h1>
+    <h2 class=" text-xl text-blue-500 border border-black">Home Dad Bakery</h2>
 </template>
