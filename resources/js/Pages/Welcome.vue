@@ -13,4 +13,9 @@
         <div class="rounded-lg border-2 p-2 ">Praesentium quisquam enim totam nesciunt.</div>
         <div class="rounded-lg border-2 p-2 ">Explicabo eligendi nemo rem porro?</div>
     </div>
+
+    <div class="mt-5">
+        <label class="font-title font-normal">Lorem, ipsum dolor.</label>
+        <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam <span class="font-medium">voluptatibus</span> dicta animi officiis explicabo iure quia, ad commodi? Porro sint <span class="font-medium">deleniti</span> eaque odio in officia at, corporis tenetur quisquam incidunt?</div>
+    </div>
 </template>

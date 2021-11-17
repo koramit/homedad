@@ -6,6 +6,10 @@ module.exports = {
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    fontFamily: {
+      'body': ['K2D', 'sans-serif'],
+      'title': ['Lobster', 'cursive']
+    },
     extend: {},
   },
   variants: {
