@@ -1,21 +1,48 @@
 <template>
-    <h1 class=" text-2xl text-red-400">Hello</h1>
-    <h2 class=" text-xl text-blue-500 border border-black">Home Dad Bakery</h2>
+    <!-- page container -->
+    <div class="bg-blue-100 font-body font-thin min-h-screen md:h-screen md:flex flex-col">
 
-    <div class="grid gap-2 md:grid-cols-2 md:gap-4 xl:grid-cols-3 xl:gap-6 p-2 md:p-4 xl:p-6">
-        <div class="rounded-lg border-2 p-2 ">Lorem ipsum dolor sit amet.</div>
-        <div class="rounded-lg border-2 p-2 ">Expedita nobis at harum voluptates.</div>
-        <div class="rounded-lg border-2 p-2 ">At repellat exercitationem ratione illo?</div>
-        <div class="rounded-lg border-2 p-2 ">Officiis aut excepturi deleniti iste.</div>
-        <div class="rounded-lg border-2 p-2 ">Asperiores magni dolor veniam et.</div>
-        <div class="rounded-lg border-2 p-2 ">Exercitationem hic quibusdam tenetur quasi.</div>
-        <div class="rounded-lg border-2 p-2 ">Iure quis quas dignissimos officiis!</div>
-        <div class="rounded-lg border-2 p-2 ">Praesentium quisquam enim totam nesciunt.</div>
-        <div class="rounded-lg border-2 p-2 ">Explicabo eligendi nemo rem porro?</div>
-    </div>
+    <header class="sticky top-0 md:flex">
+        <!-- top bar  -->
+        <div class="bg-yellow-500 text-white text-lg flex justify-between py-2 px-4 md:w-56 md:flex-shrink-0">
+        <!-- brand -->
+        <div class="font-title">HomeDad</div>
 
-    <div class="mt-5">
-        <label class="font-title font-normal">Lorem, ipsum dolor.</label>
-        <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam <span class="font-medium">voluptatibus</span> dicta animi officiis explicabo iure quia, ad commodi? Porro sint <span class="font-medium">deleniti</span> eaque odio in officia at, corporis tenetur quisquam incidunt?</div>
+        <!-- page title -->
+        <div class="md:hidden">Welcome!</div>
+
+        <!-- mobile button -->
+        <button class="text-xl md:hidden">
+            🍔
+        </button>
+        </div>
+
+        <!-- mobile sidebar -->
+        <aside class="bg-yellow-300 w-5/6 fixed inset-y-0 rounded-r-3xl md:hidden">
+        <nav>mobile sidebar</nav>
+        </aside>
+
+        <!-- desktop top bar -->
+        <div class="hidden bg-yellow-300 text-white py-2 px-4 text-lg md:flex justify-between w-full">
+        <div>Welcome!</div>
+        <div>username ⚙️</div>
+        </div>
+    </header>
+
+    <main class="md:flex md:overflow-y-hidden md:flex-grow">
+        <!-- desktop sidebar -->
+        <aside class="hidden bg-yellow-300 md:block w-56 flex-shrink-0 overflow-y-auto">
+        <nav>desktop sidebar</nav>
+        </aside>
+
+        <!-- content container -->
+        <div class="p-2 overflow-y-auto">
+        <div class="shadow rounded-md bg-white my-2 p-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit, dolor at nesciunt repellat magnam amet ex quam. Dolorem, adipisci. Blanditiis libero animi omnis! Quis debitis quidem earum cupiditate fugiat saepe.</div>
+        <div class="shadow rounded-md bg-white my-2 p-2">Quam necessitatibus quae corrupti quas? Cum soluta quia perferendis voluptas, commodi provident fugiat eligendi atque aliquam fuga temporibus optio minus nemo quae quasi corporis itaque rerum. Aspernatur nulla nesciunt quod.</div>
+        <div class="shadow rounded-md bg-white my-2 p-2">Voluptates, eligendi. Ipsa nobis quia eos ipsam quibusdam veritatis cumque pariatur quam ab, nesciunt praesentium dolorem vero natus dolor reiciendis minus, corrupti exercitationem doloribus repellendus quidem quis eum distinctio. Pariatur!</div>
+        <div class="shadow rounded-md bg-white my-2 p-2">Laborum, perferendis laudantium consectetur culpa quod distinctio cupiditate molestiae earum odio placeat voluptatibus similique voluptatem exercitationem ab eum enim itaque nam optio cum aspernatur officiis sint. Beatae, quisquam. Eaque, sunt!</div>
+        <div class="shadow rounded-md bg-white my-2 p-2">Provident assumenda inventore magnam repudiandae! Vero assumenda quidem, modi, dolorum pariatur aliquid qui temporibus ad veritatis provident earum quas perferendis suscipit sit fugit commodi enim dignissimos! Quos nisi rerum natus!</div>
+        </div>
+    </main>
     </div>
 </template>
