@@ -1,3 +1,16 @@
+.slide-fade-enter-active {
+  transition: all .2s ease-out;
+}
+
+.slide-fade-leave-active {
+  transition: all .2s cubic-bezier(1.0, -1.5, 0.8, 1.0);
+}
+
+.slide-fade-enter-from,
+  .slide-fade-leave-to {
+  transform: translateY(-20px);
+  opacity: 0;
+}
 /*! tailwindcss v2.2.19 | MIT License | https://tailwindcss.com */
 
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
@@ -187995,3 +188008,4 @@ video {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
+

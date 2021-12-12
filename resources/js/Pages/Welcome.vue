@@ -25,7 +25,7 @@
                 class="bg-yellow-300 w-5/6 fixed inset-y-0 rounded-r-3xl md:hidden transform transition-transform duration-200"
                 :class="{'-translate-x-full': !mobileSidebarOpen}"
             >
-            <nav>mobile sidebar</nav>
+                <NavMenu />
             </aside>
 
             <!-- desktop top bar -->
@@ -38,7 +38,7 @@
         <main class="md:flex md:overflow-y-hidden md:flex-grow">
             <!-- desktop sidebar -->
             <aside class="hidden bg-yellow-300 md:block w-56 flex-shrink-0 overflow-y-auto">
-            <nav>desktop sidebar</nav>
+                <NavMenu />
             </aside>
 
             <!-- content container -->
@@ -55,6 +55,7 @@
 
 <script setup>
 import { ref } from "@vue/reactivity";
+import NavMenu from '@/Components/Layouts/NavMenu';
 
-let mobileSidebarOpen = ref(false);
+let mobileSidebarOpen = ref(true);
 </script>
