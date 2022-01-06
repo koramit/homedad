@@ -18,6 +18,10 @@ Route::get('/', function () {
     return Inertia::render('Welcome');
 });
 
+Route::get('vue-quill', function () {
+    return Inertia::render('VueQuill');
+});
+
 Route::get('page', function () {
     return Inertia::render('Page', [
         'menuItems' => ['apple', 'banana', 'coconut', 'orange'],

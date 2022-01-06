@@ -13,6 +13,7 @@
         "@inertiajs/inertia": "^0.10.1",
         "@inertiajs/inertia-vue3": "^0.5.2",
         "@vue/compiler-sfc": "^3.2.21",
+        "@vueup/vue-quill": "^1.0.0-beta.7",
         "autoprefixer": "^10.4.0",
         "axios": "^0.21",
         "laravel-mix": "^6.0.6",
